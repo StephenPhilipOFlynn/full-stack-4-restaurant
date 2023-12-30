@@ -5,11 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content>
         <meta name="author" content>
+        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="jquery-ui.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Leticia's | A Restaurant in Dublin combing the flavours of Brazil and Spain</title>
+        <title>Leticia's | A Restaurant in Dublin combining the flavours of Brazil and Spain</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    background-color: #FCEDDA;
+    color: #EE4E34;
+    font-family: 'Kanit', sans-serif;
+}
+
+.reserve {
+    border-radius: 10px;
+
+}
+
+        </style>
     </head>
     <body>
     <nav>
@@ -20,11 +37,11 @@
             <button class="navbar-toggler"></button>
             <div>
                 <ul class="navbar-nav navbar-expand-lg navbar-light bg-light">
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-home">Home </a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-menu">Menu </a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-ourstory">Our Story </a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-reservation">Reservation </a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-contact">Contact Us </a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-ourstory">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-reservation">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-contact">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -40,8 +57,7 @@
             <div class="item"><img src="assets/images/shutterstock_223977070_olivetapas.jpg" alt="Olives"></div>
         </div>
     </section>
-    <section class="" id="menu"></section>
-    <section class="" id="chefs">
+    <section class="section" id="ourstory">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4"></div>
@@ -50,10 +66,14 @@
             </div>
         </div>
     </section>
-    <section class="" id="reservation">
+    <section class="section" id="menu"></section>
+    <section class="section" id="reservation">
         <div class="container">
-            <div class ="">
+            <div class ="reserve">
                 <h3>Reserve a Table</h3>
+                <fieldset>
+                    <input name="name" type="text" id="name" placeholder="Your name" required>
+                </fieldset>
                 <fieldset>
                     <input name="email" type="text" id="email" placeholder="Your email" required>
                 </fieldset>
@@ -64,21 +84,18 @@
                     <select value="number-guests"></select>
                 </fieldset>
                 <fieldset>
-                    <input name="date" id="date" type="text" class="" placeholder="DD/MM/YYYY">
-                </fieldset>
-                <fieldset>
                     <select value="time" name="time" id="time"></select>
                 </fieldset>
-                <fieldset>
-                    <textarea name="message" rows="5" id="message" placeholder="Any comments regarding your reservation here"></textarea>
-                </fieldset>
+                <input name="date" id="date" type="text" class="" placeholder="DD/MM/YYYY">
             </div>
             </div>
 
         </div>
         </section>
-
-
+        <!-- these two below for the datepicker-->
+        <script src="external/jquery/jquery.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <!--two below for the owl carousel pictures-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
@@ -98,13 +115,11 @@
         }
     }
 })
-        </script>
+
+$("document").ready(function(){
+$("#date").datepicker();
+
+})
+</script>
 </body>
-
-
-
-
-
-
-
 </html>
