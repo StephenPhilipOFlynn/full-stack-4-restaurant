@@ -13,18 +13,29 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Leticia's | A Restaurant in Dublin combining the flavours of Brazil and Spain</title>
         <style>
+
+
             @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+        background-color: #FCEDDA;
+        color: #EE4E34;
+        font-family: 'Kanit', sans-serif;
+        }
 
-body {
-    background-color: #FCEDDA;
-    color: #EE4E34;
-    font-family: 'Kanit', sans-serif;
-}
+        .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-}
+        .navbar-brand img {
+        width: 100px; 
+        height: auto"
+        }
 
         </style>
     </head>
@@ -32,16 +43,16 @@ body {
     <nav>
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="assets/images/restaurant_logo_name.png" alt="logo" style="width: 100px; height: auto";>
+                <img src="assets/images/restaurant_logo_name.png" alt="logo">
             </a>
             <button class="navbar-toggler"></button>
             <div>
                 <ul class="navbar-nav navbar-expand-lg navbar-light bg-light">
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-ourstory">Our Story</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-reservation">Reservation</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="#section-contact">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ourstory">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -92,6 +103,7 @@ body {
 
         </div>
         </section>
+        <section id="contact"></section>
         <!-- these two below for the datepicker-->
         <script src="external/jquery/jquery.js"></script>
         <script src="jquery-ui.min.js"></script>
