@@ -77,7 +77,26 @@
         .single-menu img {
             border-radius: 5px;
             max-width: 120px;
+            margin-right: 10px;
 
+        }
+
+        /* Social Media Footer */
+
+
+        .social-networks {
+            text-align: center;
+        }
+
+        .social-networks > li {
+            display: inline;
+        }
+
+        .social-networks i {
+            font-size: 180%;
+            margin: 1%;
+            padding: 5%;
+            color: #ffffff;
         }
 
 
@@ -152,7 +171,7 @@
                             <img src="assets/images/shutterstock_1295330587_croquettas.jpg" alt="">
                             <div class="menu-content">
                                 <h5>Croquetas<span></span></h5>
-                                <p></p>
+                                <p>The classic Spanish snack with a harmony of flavours</p>
                             </div>
                         </div>
                     </div>
@@ -269,6 +288,8 @@
         <!--two below for the owl carousel pictures-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- font tags for social media links-->
+        <script src="https://kit.fontawesome.com/d8d846aa60.js" crossorigin="anonymous"></script>
         <script>
             $('.owl-carousel').owlCarousel({
     loop:true,
@@ -292,5 +313,16 @@ $("#date").datepicker();
 
 })
 </script>
+<ul class="social-networks">
+    <li>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+    </li>
+    <li>
+        <a href="http://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+    </li>
+</ul>
 </body>
 </html>
